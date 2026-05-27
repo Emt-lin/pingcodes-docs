@@ -4,7 +4,7 @@ layout: home
 hero:
   name: "PingCodes"
   text: "AI API 中转站"
-  tagline: 一个 Key 接入主流 AI 客户端，CC-Switch 或 Codex++ 任选其一，30 秒上手
+  tagline: 一个 Key 接入主流 AI 客户端，CC-Switch 或 Codex++ 任选其一，30 秒上手 ✨
   actions:
     - theme: brand
       text: 快速开始
