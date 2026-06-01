@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress"
 export default defineConfig({
   lang: "zh-CN",
   title: "PingCodes",
-  description: "AI API 中转站 · 使用文档",
+  description: "AI 订阅拼车 · 官方真号共享 · 使用文档",
   cleanUrls: true,
   lastUpdated: true,
 
@@ -16,7 +16,7 @@ export default defineConfig({
 
     nav: [
       { text: "首页", link: "/" },
-      { text: "快速开始", link: "/guide/overview" },
+      { text: "快速开始", link: "/guide/what-is-pingcodes" },
       { text: "去后台", link: "https://api.pingcodes.cc" }
     ],
 
@@ -25,6 +25,7 @@ export default defineConfig({
         {
           text: "快速开始",
           items: [
+            { text: "什么是 PingCodes 拼车", link: "/guide/what-is-pingcodes" },
             { text: "选择接入方式", link: "/guide/overview" }
           ]
         },
