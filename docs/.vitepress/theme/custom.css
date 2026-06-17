@@ -1,0 +1,81 @@
+/* ============================================================
+   PingCodes 首页设计 token —— 明 / 暗两套，全部走 CSS 变量
+   命名沿用设计交接稿（--bg / --fg / --accent ...）
+   ============================================================ */
+
+:root {
+  --bg: #ffffff;
+  --fg: #0b1f1d;
+  --muted: #5a6b68;
+  --surface: #ffffff;
+  --surface2: #f4f8f7;
+  --border: #e6ece9;
+  --accent: #0d9488;
+  --accent-soft: #e1f3f0;
+  --accent-fg: #ffffff;
+  --icon-bg: #e1f3f0;
+  --icon-fg: #0b7d72;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+
+  /* 终端窗口配色（明暗固定同一套） */
+  --term-bg: #0b1c1a;
+  --term-titlebar: #0d201d;
+  --term-border: #16332e;
+  --term-fg: #cfeae4;
+  --term-comment: #6f8a85;
+  --term-key: #3ee0c8;
+  --term-string: #ffd9a8;
+  --term-section: #7dd3fc;
+  --term-success: #28c840;
+  --tl-red: #ff5f57;
+  --tl-yellow: #febc2e;
+  --tl-green: #28c840;
+
+  /* 字体栈 */
+  --font-display: "Space Grotesk", "Noto Sans SC", sans-serif;
+  --font-body: "Plus Jakarta Sans", "Noto Sans SC", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+html.dark {
+  --bg: #0a1413;
+  --fg: #e6f0ee;
+  --muted: #92a6a2;
+  --surface: #0f1e1c;
+  --surface2: #122523;
+  --border: #1f3431;
+  --accent: #19c2b1;
+  --accent-soft: #0e2c28;
+  --accent-fg: #04231f;
+  --icon-bg: #0e2c28;
+  --icon-fg: #5eead4;
+  --nav-bg: rgba(10, 20, 19, 0.85);
+}
+
+/* 让其余 VitePress 文档页的品牌色与首页统一 */
+:root {
+  --vp-c-brand-1: #0b7d72;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #0d9488;
+}
+html.dark {
+  --vp-c-brand-1: #5eead4;
+  --vp-c-brand-2: #19c2b1;
+  --vp-c-brand-3: #19c2b1;
+}
+
+/* ============================================================
+   首页：隐藏 VitePress 默认导航 / 页脚 / 容器内边距
+   （导航组件仍挂载 —— 保留 ⌘K 搜索热键与主题切换可被程序触发）
+   ============================================================ */
+.home-page .VPNav {
+  display: none;
+}
+.home-page.VPContent,
+.home-page .VPPage {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.home-page .VPContent {
+  padding-top: 0 !important;
+}
