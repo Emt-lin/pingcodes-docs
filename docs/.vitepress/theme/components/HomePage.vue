@@ -101,7 +101,6 @@ function openSearch() {
 <span class="c-key">name</span>      = <span class="c-string">"PingCodes"</span>
 <span class="c-key">base_url</span>  = <span class="c-string">"https://api.pingcodes.cc"</span>
 <span class="c-key">api_key</span>   = <span class="c-string">"pk-••••••••••••"</span>
-<span class="c-key">model</span>     = <span class="c-string">"gpt-5-codex"</span>
 
 <span class="c-dollar">$</span> cc-switch use pingcodes
 <span class="c-success">✓ 已切换 · 出口 IP 固定 · 额度独立</span><span class="cursor" /></pre>
@@ -171,7 +170,8 @@ function openSearch() {
   font-family: var(--font-body);
   min-height: 100vh;
 }
-.pc-home a { text-decoration: none; color: inherit; }
+.pc-home a { text-decoration: none; }
+.pc-home .brand { color: var(--fg); }
 
 /* ---------- 导航 ---------- */
 .nav {
