@@ -52,6 +52,6 @@ PingCodes 是一个 **AI 订阅拼车平台**——把 Claude、OpenAI、Gemini 
 
 1. 登录 [控制台](https://api.pingcodes.cc) 注册账号、选拼车套餐
 2. 在控制台 **API Keys** 页创建你的专属 Key
-3. 用 [CC-Switch](./cc-switch-install) 或 [Codex++](./codex-plus-plus-install) 把 Key 配进你的 AI 客户端
+3. 用 CC Switch 把 Key 配进你的 AI 客户端
 
-详细接入方式见：[选择接入方式 →](./overview)
+详细接入方式见：[接入 Codex（用 CC Switch） →](./codex)

@@ -16,33 +16,31 @@ export default defineConfig({
 
     nav: [
       { text: "首页", link: "/" },
-      { text: "快速开始", link: "/guide/what-is-pingcodes" },
+      { text: "接入 Codex", link: "/guide/codex" },
       { text: "去后台", link: "https://api.pingcodes.cc" }
     ],
 
     sidebar: {
       "/guide/": [
         {
-          text: "快速开始",
+          text: "开始之前",
           items: [
-            { text: "什么是 PingCodes 拼车", link: "/guide/what-is-pingcodes" },
-            { text: "选择接入方式", link: "/guide/overview" }
+            { text: "什么是 PingCodes 拼车", link: "/guide/what-is-pingcodes" }
           ]
         },
         {
-          text: "CC-Switch 路线",
+          text: "接入教程",
           collapsed: false,
           items: [
-            { text: "安装 CC-Switch", link: "/guide/cc-switch-install" },
-            { text: "接入 PingCodes", link: "/guide/cc-switch-connect" }
+            { text: "⭐ 接入 Codex（用 CC Switch）", link: "/guide/codex" }
           ]
         },
         {
-          text: "Codex++ 路线",
+          text: "其他客户端",
           collapsed: false,
           items: [
-            { text: "安装 Codex++", link: "/guide/codex-plus-plus-install" },
-            { text: "接入 PingCodes", link: "/guide/codex-plus-plus-connect" }
+            { text: "安装 CC Switch", link: "/guide/cc-switch-install" },
+            { text: "接入 Claude Code / Gemini", link: "/guide/cc-switch-connect" }
           ]
         }
       ]

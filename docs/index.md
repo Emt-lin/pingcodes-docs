@@ -7,8 +7,8 @@ hero:
   tagline: 3-4 人拼一个官方真号，价格平摊。统一出口 IP 保号防封，额度按人独立分配，明算账不超卖。
   actions:
     - theme: brand
-      text: 快速开始
-      link: /guide/what-is-pingcodes
+      text: 立即接入 Codex
+      link: /guide/codex
     - theme: alt
       text: 进入控制台
       link: https://api.pingcodes.cc
@@ -25,15 +25,15 @@ features:
   - icon: ⚖️
     title: 额度独立，绝不超卖
     details: 每个车位独立并发额度，互不挤占；标几人就放几人，绝不偷偷塞人。
-  - icon: 🖥️
-    title: CC-Switch 接入
-    details: Claude Code / Codex CLI / Gemini CLI 一键切换，Claude Code 支持热切换。
-    link: /guide/cc-switch-install
+  - icon: 🤖
+    title: 接入 Codex
+    details: 用 CC Switch 配置 Codex，保留官方登录的同时走 PingCodes，对照截图三步搞定。
+    link: /guide/codex
     linkText: 查看接入步骤
-  - icon: ⚡
-    title: Codex++ 接入
-    details: Codex 桌面 App 注入，附带会话管理、Markdown 导出等增强能力。
-    link: /guide/codex-plus-plus-install
+  - icon: 🖥️
+    title: 接入 Claude Code / Gemini
+    details: 同样用 CC Switch 管理 Claude Code、Gemini CLI 等客户端，一键切换。
+    link: /guide/cc-switch-install
     linkText: 查看接入步骤
   - icon: 🤝
     title: 熟人组队
