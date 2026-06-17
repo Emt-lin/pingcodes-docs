@@ -16,11 +16,17 @@
 
 到官网下载安装：**[https://ccswitch.io/zh/](https://ccswitch.io/zh/)**（支持 Windows / macOS / Linux）。
 
-::: tip 先登录官方
-安装好 Codex 后，先用你的 ChatGPT 账号完成一次官方登录（Free 订阅也行）。它只负责保留 Codex 的官方身份，不影响后面走 PingCodes。
+## 第一步：先用官方账号登录 Codex
+
+**这一步不能跳过。** 打开 Codex，用你的 ChatGPT 账号完成一次**官方登录**（Free 订阅也行）。
+
+为什么必须先登录官方：后面我们会开启「切换第三方时保留官方登录」——它保留的就是**这次登录留下的官方身份**。只有先登录过，官方插件、手机远程操作等依赖官方登录态的功能才能在用 PingCodes 的同时继续可用。如果从没登录过官方，就没有"官方登录"可保留。
+
+::: tip
+这个官方账号只负责保留 Codex 的官方身份，**不负责计费**——实际的模型请求会走 PingCodes。
 :::
 
-## 第一步：打开 CC Switch 设置，开启 3 个开关
+## 第二步：打开 CC Switch 设置，开启 3 个开关
 
 打开 CC Switch，进入左上角 **设置 → 通用**，把下面三个开关打开（截图红框处）：
 
@@ -30,7 +36,7 @@
 
 ![CC Switch 设置-通用，开启三个开关](/codex/ccswitch-settings.jpg)
 
-## 第二步：添加 PingCodes 供应商
+## 第三步：添加 PingCodes 供应商
 
 按截图里的编号顺序操作：
 
