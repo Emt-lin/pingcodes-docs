@@ -77,3 +77,26 @@
 ::: tip API Key 要用对分组
 Codex 必须用 **OpenAI 分组** 的 Key（`sk-` 开头）。如果误填了 Claude 分组的 Key，也会 401。
 :::
+
+## 老用户：以前用过中转站，官方登录丢了怎么办？
+
+如果你**之前已经在 CC Switch 里切换过第三方供应商**（中转站），那次切换会把 `auth.json` 里的官方登录态覆盖掉——所以你现在直接开「保留官方登录」也保不住，得先把官方登录**找回来**。
+
+::: warning 区别
+- **新手**：按上面主流程走即可（先官方登录，顺序天然正确）。
+- **老用户**：官方登录已经被第三方覆盖丢了，要按下面顺序**先切回官方重新登录**。
+:::
+
+推荐顺序：
+
+1. 在 CC Switch 的 **Codex 面板切换到 OpenAI Official**
+2. 启动 Codex，用官方 ChatGPT / Codex 账号**重新登录一次**（Free 订阅也行）——目的是把官方 access token 重新写回 `auth.json`
+3. 回 CC Switch，打开 **设置 → 通用 → Codex 应用增强 → 切换第三方时保留官方登录**
+4. 添加或切换到第三方供应商（**PingCodes**，按上面[第三步](#第三步-添加-pingcodes-供应商)填）
+5. **重启 Codex**，让 `config.toml` 和模型列表重新加载
+
+之后再切换第三方就不会覆盖官方登录了。
+
+::: tip PingCodes 不需要"本地路由"
+有些教程里第 5 步附近会提到"开启本地路由"——那是给 **DeepSeek / Kimi / MiniMax** 这类只支持 Chat Completions 协议的供应商用的。**PingCodes 原生支持 Responses 协议，不需要本地路由**，直接填地址即用。
+:::
